@@ -2,7 +2,7 @@
 sqlite3 PhotoWalker.sqlite <<!
 .headers off
 .output ambient.json
-select '{"type":"Feature","geometry":{"type":"Point","coordinates":[' || zlongitude || ',' || zlatitude ||']}, "properties":{"brightness":'|| zbrightness || ', "timestamp":"' || strftime('%Y-%m-%d %H:%M:%S', datetime(ZTIMESTAMP+978307200, 'unixepoch', 'localtime')) || '"}},' from ZAMBIENT where datetime(ZTIMESTAMP+978307200, 'unixepoch', 'localtime') > '2016-02-11 18:00:00';
+select '{"type":"Feature","geometry":{"type":"Point","coordinates":[' || zlongitude || ',' || zlatitude ||']}, "properties":{"brightness":'|| zbrightness || ', "timestamp":"' || strftime('%Y-%m-%d %H:%M:%S', datetime(ZTIMESTAMP+978307200, 'unixepoch', 'localtime')) || '"}},' from ZAMBIENT where datetime(ZTIMESTAMP+978307200, 'unixepoch', 'localtime') > '2016-02-11 18:00:00' and datetime(ZTIMESTAMP+978307200, 'unixepoch', 'localtime') < '2016-02-11 19:30:00';
 !
 sed -i '' '$ s/.$//' ambient.json
 echo '{ "type": "FeatureCollection", "features": [' > ambient.geojson
