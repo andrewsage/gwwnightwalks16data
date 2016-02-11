@@ -1,4 +1,4 @@
 { "type": "FeatureCollection", "features": [
-{"type":"Feature","geometry":{"type":"Point","coordinates":[57.1466768486957,-2.10116400383609]}, "properties":{"brightness":20, "timestamp":"2016-02-11 18:08:18"}},
-{"type":"Feature","geometry":{"type":"Point","coordinates":[57.1466768486957,-2.10116400383609]}, "properties":{"brightness":22, "timestamp":"2016-02-11 18:08:18"}}
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-2.10116400383609,57.1466768486957]}, "properties":{"brightness":20, "timestamp":"2016-02-11 18:08:18"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-2.10116400383609,57.1466768486957]}, "properties":{"brightness":22, "timestamp":"2016-02-11 18:08:18"}}
 ]}
